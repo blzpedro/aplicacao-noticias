@@ -28,7 +28,7 @@ class InscritosController < ApplicationController
 
     respond_to do |format|
       if @inscrito.save
-        format.html { redirect_to @inscrito, notice: 'Inscrito was successfully created.' }
+        format.html { redirect_to main_premium_path, notice: 'Inscrito was successfully created.' }
         format.json { render :show, status: :created, location: @inscrito }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class InscritosController < ApplicationController
   def update
     respond_to do |format|
       if @inscrito.update(inscrito_params)
-        format.html { redirect_to @inscrito, notice: 'Inscrito was successfully updated.' }
+        format.html { redirect_to main_noticias_path, notice: 'Inscrito was successfully updated.' }
         format.json { render :show, status: :ok, location: @inscrito }
       else
         format.html { render :edit }
