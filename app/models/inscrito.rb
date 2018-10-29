@@ -1,0 +1,2 @@
+class Inscrito < ApplicationRecord
+end
