@@ -1,5 +1,8 @@
 {
   "name": "trabalhoo",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "popper.js": "^1.14.4"
+  }
 }

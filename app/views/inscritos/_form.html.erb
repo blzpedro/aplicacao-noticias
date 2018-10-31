@@ -13,8 +13,10 @@
 
   <div class="field">
     <%= form.label :email %>
-    <%= form.text_field :email %>
+    <%= form.text_field :email,:placeholder=>"Type an email address",:pattern=>"^([\w+-.%]+@[\w-.]+\.[A-Za-z]{2,4},*[\W]*)+$",:multiple => true %>
   </div>
+  
+  <%= %>
 
   <div class="actions">
     <%= form.submit :Confirmar%>
