@@ -7,15 +7,20 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <%= link_to 'Home', main_noticias_path, :class => "nav-item nav-link" %>
-      <a class="nav-item nav-link" href="#">Noticias</a>
-      <a class="nav-item nav-link" href="#">Sobre</a>
-      <a class ="nav-item nav-link active" disabled>Logado como:</a>
+      <div class="navbar-nav mr-auto">
+        <%= link_to 'Home', main_noticias_path, :class => "nav-item nav-link" %>
+        <a class="nav-item nav-link" href="#">Noticias</a>
+        <a class="nav-item nav-link" href="#">Sobre</a>
+        <%= link_to 'Cadastre-se', new_inscrito_path, :class => "nav-item nav-link active" %>
+       </div>
+       <div class="form-inline mt-2 mt-md-0">
+            <%= link_to 'Sair', main_noticias_path, :class => "nav-item nav-link" %>
+       </div>
   </div>
 </nav>
 <h1 class="featurette-heading" style="text-align: center;margin: 30px 0px;">Noticias Premium</h1>
-<div class="row featurette" data-find="_2">
+<hr class="featurette-divider">
+<div class="featurette" data-find="_2" style="display: flex;">
           <div class="col-md-7" data-find="_1">
             <h2 class="featurette-heading">Noticia 1</h2> 
             <h3 class="text-muted">Apple começa a vender o iPhone XR nos EUA por US$ 749</h3>
@@ -26,7 +31,7 @@
           </div>
         </div>
         <hr class="featurette-divider">
-        <div class="row featurette" data-find="_8">
+        <div class="featurette" data-find="_8" style="display: flex;">
           <div class="col-md-7 order-md-2" data-find="_7">
             <h2 class="featurette-heading">Noticia 2</h2>
             <h3 class="text-muted">Vendas da Amazon no 3º tri crescem, mas ficam abaixo do esperado</h3>
@@ -37,8 +42,8 @@
           </div>
         </div>
         <hr class="featurette-divider">
-<div class="row featurette" data-find="_2">
-          <div class="col-md-7" data-find="_1">
+<div class="featurette" data-find="_2" style="display: flex;">
+          <div class="col-md-7" data-find="_1" >
             <h2 class="featurette-heading">Noticia 3</h2> 
             <h3 class="text-muted">Apple começa a vender o iPhone XR nos EUA por US$ 749</h3>
             <p class="lead col-md-9">A Apple começou a vender nesta sexta-feira (26) o novo iPhone XR, versão mais barata da atual linha da empresa, em mercados como Estados Unidos e China.<br>Com preço partindo de US$ 749, o smartphone foi apresentando em setembro passado, juntamente com Iphone XS (US$ 999) e Iphone XS Max (US$ 1.099).<br>Enquanto ainda não há informações sobre quando chegará o Brasil, o XR é a aposta para ser a base desta nova gerações de Iphones.</p>
@@ -47,8 +52,54 @@
             <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167518e66c0%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167518e66c0%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22187%22%20y%3D%22261.4%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
           </div>
         </div>
-
-<%= link_to 'Voltar', main_noticias_path %>
+        <hr class="featurette-divider">
+<footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+          <small class="d-block mb-3 text-muted">© 2017-2018</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Business</a></li>
+            <li><a class="text-muted" href="#">Education</a></li>
+            <li><a class="text-muted" href="#">Government</a></li>
+            <li><a class="text-muted" href="#">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+<%= link_to 'Voltar', main_noticias_path, :class => "btn btn-lg btn-secondary" %>
 
 
 
