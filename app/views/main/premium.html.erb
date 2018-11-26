@@ -1,32 +1,52 @@
-<h1>Noticias Premium</h1> 
-<h3>Apple começa a vender o iPhone XR nos EUA por US$ 749</h3>
-<p>A Apple começou a vender nesta sexta-feira (26) o novo iPhone XR, versão mais barata da atual linha da empresa, em mercados como Estados Unidos e China.
-
-Com preço partindo de US$ 749, o smartphone foi apresentando em setembro passado, juntamente com Iphone XS (US$ 999) e Iphone XS Max (US$ 1.099).
-
-Enquanto ainda não há informações sobre quando chegará o Brasil, o XR é a aposta para ser a base desta nova gerações de Iphones.
-
-Com tela de 6,1 polegadas, o XR é feito de alumínio e tem opções nas cores branca, azul, preta, amarela e vermelha. O aparelho tem display de LCD, e não de OLED como o Xs e Xs Max, mas traz muitas das funcionalidades destes modelos.
-
-A nova linha chega para substituir iPhone 8, iPhone X e iPhone 8 Plus, apresentados no ano passado.</p>
-
-<h3>Vendas da Amazon no 3º tri crescem, mas ficam abaixo do esperado</h3>
-<p>As vendas trimestrais da Amazon.com ficaram abaixo do esperado por Wall Street, o que fez as ações da maior varejista online do mundo recuarem 6% no pregão após o fechamento do mercado.
-
-As vendas líquidas da empresa subiram para US$ 56,58 bilhões ante US$ 43,74 bilhões no mesmo período do ano passado, mas ficaram abaixo da previsão média de analistas, de faturamento de US$ 57,1 bilhões, segundo dados da Refinitiv.
-
-O lucro líquido da Amazon no trimestre subiu para US$ 2,88 bilhões, ou US$ 5,75 por ação, ante US$ 256 milhões, ou US$ 0,52 dólar, um ano antes.
-
-A receita da divisão de serviços de computação em nuvem, Amazon Web Services (AWS), disparou 45,7%, para US$ 6,68 bilhões, praticamente em linha com os US$ 6,67 de dólares de estimativas anteriores.</p>
-
-<h3>Dona do Google supera previsões de lucro no 3º trimestre</h3>
-<p>A Alphabet superou as previsões de analistas de Wall Street para o lucro do terceiro trimestre, uma vez que as receitas com anúncios online do grupo de buscas na internet dispararam.
-
-O lucro líquido somou US$ 9,19 bilhões, ou US$ 13,06 por ação, ante US$ 6,73 bilhões, ou US$ 9,57 por papel, um ano antes. O mercado esperava US$ 10,45 por ação, segundo a Bloomberg.
-
-As receitas deram um salto para US$ 33,74 bilhões, ante US$ 27,8 bilhões, informou a dona do Google nesta quinta-feira (25).
-
-A previsão média de analistas era de receita de US$ 34,05 bilhões e lucro de US$ 10,45 por ação, de acordo com dados da Refinitiv.</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <a class="navbar-brand" href="#">
+    <%= image_tag("logo.png", :alt => "logo", size: "30x30") %>
+    Portal do Esporte
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <%= link_to 'Home', main_noticias_path, :class => "nav-item nav-link" %>
+      <a class="nav-item nav-link" href="#">Noticias</a>
+      <a class="nav-item nav-link" href="#">Sobre</a>
+      <a class ="nav-item nav-link active" disabled>Logado como:</a>
+  </div>
+</nav>
+<h1 class="featurette-heading" style="text-align: center;margin: 30px 0px;">Noticias Premium</h1>
+<div class="row featurette" data-find="_2">
+          <div class="col-md-7" data-find="_1">
+            <h2 class="featurette-heading">Noticia 1</h2> 
+            <h3 class="text-muted">Apple começa a vender o iPhone XR nos EUA por US$ 749</h3>
+            <p class="lead col-md-9">A Apple começou a vender nesta sexta-feira (26) o novo iPhone XR, versão mais barata da atual linha da empresa, em mercados como Estados Unidos e China.<br>Com preço partindo de US$ 749, o smartphone foi apresentando em setembro passado, juntamente com Iphone XS (US$ 999) e Iphone XS Max (US$ 1.099).<br>Enquanto ainda não há informações sobre quando chegará o Brasil, o XR é a aposta para ser a base desta nova gerações de Iphones.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167518e66c0%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167518e66c0%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22187%22%20y%3D%22261.4%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+          </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette" data-find="_8">
+          <div class="col-md-7 order-md-2" data-find="_7">
+            <h2 class="featurette-heading">Noticia 2</h2>
+            <h3 class="text-muted">Vendas da Amazon no 3º tri crescem, mas ficam abaixo do esperado</h3>
+            <p class="lead col-md-9">As vendas trimestrais da Amazon.com ficaram abaixo do esperado por Wall Street, o que fez as ações da maior varejista online do mundo recuarem 6% no pregão após o fechamento do mercado.<br>As vendas líquidas da empresa subiram para US$ 56,58 bilhões ante US$ 43,74 bilhões no mesmo período do ano passado, mas ficaram abaixo da previsão média de analistas.<br>O lucro líquido da Amazon no trimestre subiu para US$ 2,88 bilhões, ou US$ 5,75 por ação, ante US$ 256 milhões, ou US$ 0,52 dólar, um ano antes.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167518e66da%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167518e66da%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22187%22%20y%3D%22261.4%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 500px; height: 500px;">
+          </div>
+        </div>
+        <hr class="featurette-divider">
+<div class="row featurette" data-find="_2">
+          <div class="col-md-7" data-find="_1">
+            <h2 class="featurette-heading">Noticia 3</h2> 
+            <h3 class="text-muted">Apple começa a vender o iPhone XR nos EUA por US$ 749</h3>
+            <p class="lead col-md-9">A Apple começou a vender nesta sexta-feira (26) o novo iPhone XR, versão mais barata da atual linha da empresa, em mercados como Estados Unidos e China.<br>Com preço partindo de US$ 749, o smartphone foi apresentando em setembro passado, juntamente com Iphone XS (US$ 999) e Iphone XS Max (US$ 1.099).<br>Enquanto ainda não há informações sobre quando chegará o Brasil, o XR é a aposta para ser a base desta nova gerações de Iphones.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_167518e66c0%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_167518e66c0%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22187%22%20y%3D%22261.4%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+          </div>
+        </div>
 
 <%= link_to 'Voltar', main_noticias_path %>
 
