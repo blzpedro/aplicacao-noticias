@@ -1,14 +1,14 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-   <a class="navbar-brand" href="#">
-    <%= image_tag("logo.png", :alt => "logo", size: "30x30") %>
+   <span class="navbar-brand">
+    <%= image_tag("logo.png", :alt => "logo", size: "30x30", :class => "navbar-brand") %>
     Portal do Esporte
-  </a>
+  </span>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav mr-auto">
-        <%= link_to 'Home', main_noticias_path, :class => "nav-item nav-link" %>
+        <%= link_to 'Home', root_path, :class => "nav-item nav-link" %>
         <a class="nav-item nav-link" href="#">Noticias</a>
         <a class="nav-item nav-link" href="#">Sobre</a>
         <%= link_to 'Compre sua revista física!', new_inscrito_path, :class => "nav-item nav-link" %>
