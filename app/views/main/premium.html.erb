@@ -9,12 +9,12 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav mr-auto">
         <%= link_to 'Home', root_path, :class => "nav-item nav-link" %>
-        <a class="nav-item nav-link" href="#">Noticias</a>
-        <a class="nav-item nav-link" href="#">Sobre</a>
+        <%= link_to 'Noticias', main_diario_path, :class => "nav-item nav-link"%>
+        <%= link_to 'Sobre', main_sobre_path, :class => "nav-item nav-link"%>
         <%= link_to 'Compre sua revista física!', new_inscrito_path, :class => "nav-item nav-link" %>
        </div>
        <div class="form-inline mt-2 mt-md-0">
-            <%= link_to 'Sair', main_noticias_path, :class => "nav-item nav-link" %>
+            <%= link_to 'Sair', root_path, :class => "nav-item nav-link" %>
        </div>
   </div>
 </nav>
