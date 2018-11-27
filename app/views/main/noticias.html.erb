@@ -9,8 +9,8 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="#">Home</a>
-      <a class="nav-item nav-link" href="#">Noticias</a>
-      <a class="nav-item nav-link" href="#">Sobre</a>
+      <%= link_to 'Noticias', main_diario_path, :class => "nav-item nav-link"%>
+      
       <%= link_to 'Cadastre-se', new_inscrito_path, :class => "nav-item nav-link" %>
     </div>
   </div>
