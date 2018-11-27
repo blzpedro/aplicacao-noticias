@@ -4,4 +4,7 @@ class MainController < ApplicationController
   
   def diario
   end
+  
+  def sobre
+  end
 end
