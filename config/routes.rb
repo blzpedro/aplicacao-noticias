@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   get 'sessions/futebol'
   get 'sessions/luta'
   get 'sessions/volei'
+  get 'sessionspremium/basquete'
+  get 'sessionspremium/tenis'
+  get 'sessionspremium/resultados'
 end
