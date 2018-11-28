@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <span class="navbar-brand">
+    <%= image_tag("logo.png", :alt => "logo", size: "30x30", :class => "navbar-brand") %>
+    Portal do Esporte
+  </span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <%= link_to 'Home', root_path, :class => "nav-item nav-link"%>
+            <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sessões
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to 'Futebol', sessions_futebol_path, :class => "dropdown-item nav-item nav-link"%>
+          <%= link_to 'Luta', sessions_luta_path, :class => "dropdown-item nav-item nav-link"%>
+          <%= link_to 'Volei', sessions_volei_path, :class => "dropdown-item nav-item nav-link"%>
+        </div>
+      </li>
+      <%= link_to 'Sobre', main_sobre_path, :class => "nav-item nav-link"%>
+      <%= link_to 'Cadastre-se', new_inscrito_path, :class => "nav-item nav-link" %>
+    </div>
+  </div>
+</nav>
