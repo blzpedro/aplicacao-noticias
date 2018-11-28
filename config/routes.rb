@@ -5,10 +5,10 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root "main#noticias"
   get 'main/sobre'
-  get 'sessions/futebol'
-  get 'sessions/luta'
-  get 'sessions/volei'
-  get 'sessionspremium/basquete'
-  get 'sessionspremium/tenis'
-  get 'sessionspremium/resultados'
+  get 'futebol' => 'sessions#futebol', as: 'sessions_futebol'
+  get 'luta' => 'sessions#luta', as: 'sessions_luta'
+  get 'volei' => 'sessions#volei', as: 'sessions_volei'
+  get 'basquete' => 'sessionspremium#basquete', as: 'sessionspremium_basquete'
+  get 'tenis' => 'sessionspremium#tenis', as: 'sessionspremium_tenis'
+  get 'resultados' => 'sessionspremium#resultados', as: 'sessionspremium_resultados'
 end
