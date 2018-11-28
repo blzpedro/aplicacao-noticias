@@ -2,7 +2,7 @@ class MainController < ApplicationController
   def noticias
   end
   
-  def diario
+  def futebol
   end
   
   def sobre

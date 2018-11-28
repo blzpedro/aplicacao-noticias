@@ -9,7 +9,16 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav mr-auto">
         <%= link_to 'Home', root_path, :class => "nav-item nav-link" %>
-        <%= link_to 'Noticias', main_diario_path, :class => "nav-item nav-link"%>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sessões
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to 'Noticias', main_futebol_path, :class => "dropdown-item nav-item nav-link"%>
+          <a class="dropdown-item" href="#">Luta</a>
+          <a class="dropdown-item" href="#">eSports</a>
+        </div>
+      </li>
         <%= link_to 'Sobre', main_sobre_path, :class => "nav-item nav-link"%>
         <%= link_to 'Compre sua revista física!', new_inscrito_path, :class => "nav-item nav-link" %>
        </div>

@@ -9,12 +9,23 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <%= link_to 'Home', root_path, :class => "nav-item nav-link"%>
-      <a class="nav-item nav-link active" href="#">Noticias</a>
+            <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sessões
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to 'Noticias', main_futebol_path, :class => "dropdown-item nav-item nav-link"%>
+          <a class="dropdown-item" href="#">Luta</a>
+          <a class="dropdown-item" href="#">eSports</a>
+        </div>
+      </li>
       <%= link_to 'Sobre', main_sobre_path, :class => "nav-item nav-link"%>
       <%= link_to 'Cadastre-se', new_inscrito_path, :class => "nav-item nav-link" %>
     </div>
   </div>
 </nav>
+<h1 class="featurette-heading col-md-12 display-4" style="text-align: center;margin: 30px 0px;">Futebol</h1>
+<hr class="featurette-divider">
 <div class="jumbotron">
   <h1 class="display-4">Hello, world!</h1>
   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
@@ -22,37 +33,21 @@
   <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
   <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
 </div>
-<div class="card-deck">
-  <div class="card">
-    <img class="card-img-top" src="https://conteudo.imguol.com.br/c/parceiros/5e/2018/10/31/nadal-desiste-do-masters-de-paris-e-djokovic-garante-retorno-ao-numero-1-do-mundo-1541001278991_v2_300x225.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+<div class="card col-md-10"  style="margin-left: 10%;">
+    <div class="card-header h2">
+    Noticia 1
     </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="https://conteudo.imguol.com.br/c/parceiros/5e/2018/10/31/nadal-desiste-do-masters-de-paris-e-djokovic-garante-retorno-ao-numero-1-do-mundo-1541001278991_v2_300x225.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="https://conteudo.imguol.com.br/c/parceiros/5e/2018/10/31/nadal-desiste-do-masters-de-paris-e-djokovic-garante-retorno-ao-numero-1-do-mundo-1541001278991_v2_300x225.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
+    <div class="col-md-6">
+        <img class="card-img-top" src="https://conteudo.imguol.com.br/c/parceiros/5e/2018/10/31/nadal-desiste-do-masters-de-paris-e-djokovic-garante-retorno-ao-numero-1-do-mundo-1541001278991_v2_300x225.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+        </div>
+       </div>
 </div>
 <br>
 <footer class="container py-5">

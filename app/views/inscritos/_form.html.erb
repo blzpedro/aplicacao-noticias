@@ -1,5 +1,4 @@
 <%= form_with(model: inscrito, local: true, :class => "alinha") do |form| %>
-  <h1>Cadastre seu email!</h1>
   <% if inscrito.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(inscrito.errors.count, "error") %> prohibited this inscrito from being saved:</h2>
