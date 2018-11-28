@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   root "main#noticias"
   get 'main/sobre'
   get 'sessions/futebol'
+  get 'sessions/luta'
+  get 'sessions/volei'
 end

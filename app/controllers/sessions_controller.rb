@@ -3,10 +3,8 @@ class SessionsController < ApplicationController
   end
   
   def luta
-      
   end
   
   def volei
-      
   end
 end
