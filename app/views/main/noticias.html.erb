@@ -6,8 +6,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
+  <div class="collapse navbar-collapse navbar-nav" id="navbarNavAltMarkup">
       <a class="nav-item nav-link active" href="#">Home</a>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -19,10 +18,31 @@
           <%= link_to 'Volei', sessions_volei_path, :class => "dropdown-item nav-item nav-link"%>
         </div>
       </li>
+      
+      <% if user_signed_in? %>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sessões Premium
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to 'Basquete', sessionspremium_basquete_path, :class => "dropdown-item nav-item nav-link"%>
+          <%= link_to 'Tenis', sessionspremium_tenis_path, :class => "dropdown-item nav-item nav-link"%>
+          <%= link_to 'Ultimos Resultados', sessionspremium_resultados_path, :class => "dropdown-item nav-item nav-link"%>
+        </div>
+      </li>      
+      <% end %>
+
       <%= link_to 'Sobre', main_sobre_path, :class => "nav-item nav-link"%>
-      <%= link_to 'Cadastre-se', new_inscrito_path, :class => "nav-item nav-link" %>
+      |
+      <% if user_signed_in? %>
+         <a class="nav-item nav-link" disabled>Logado como: <strong><%= current_user.email %></strong>.</a>
+        <%= link_to 'Edite seu perfil', edit_user_registration_path, :class => 'nav-item nav-link'%> 
+        <%= link_to "Sair", destroy_user_session_path, method: :delete, :class => 'nav-item nav-link'  %>
+      <% else %>
+        <%= link_to "Cadastre-se", new_user_registration_path, :class => 'nav-item nav-link'  %> 
+        <%= link_to "Entrar", new_user_session_path, :class => 'nav-item nav-link'  %>
+      <% end %>
     </div>
-  </div>
 </nav>
 <div class="jumbotron">
   <h1 class="display-4">Hello, world!</h1>
@@ -109,6 +129,8 @@
           </ul>
         </div>
       </div>
+      <p class="navbar-text pull-right">
+</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

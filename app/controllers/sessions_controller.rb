@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   def futebol
+     
   end
   
   def luta
