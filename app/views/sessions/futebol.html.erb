@@ -46,29 +46,27 @@
 </nav>
 <h1 class="featurette-heading col-md-12 display-4" style="text-align: center;margin: 30px 0px;">Futebol</h1>
 <hr class="featurette-divider">
-<div class="jumbotron">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-</div>
-<div class="card col-md-10"  style="margin-left: 10%;">
-    <div class="card-header h2">
-    Noticia 1
+<hr class="featurette-divider">
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5><a class="footer-col-title" href="/futebol">Futebol</a></h5>
+      <%= link_to image_tag("football.png", :alt => "football", :size=> "64x64", :class => "img-link"),"/futebol" %>
     </div>
-    <div class="col-md-6">
-        <img class="card-img-top" src="https://conteudo.imguol.com.br/c/parceiros/5e/2018/10/31/nadal-desiste-do-masters-de-paris-e-djokovic-garante-retorno-ao-numero-1-do-mundo-1541001278991_v2_300x225.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-        <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
-        </div>
-       </div>
-</div>
+    <div class="col-6 col-md">
+      <h5><a class="footer-col-title" href="/luta">Luta</a></h5>
+      <%= link_to image_tag("boxing-glove.png", :alt => "boxing-glove", :size=> "64x64", :class => "img-link"),"/luta" %>
+    </div>
+    <div class="col-6 col-md">
+      <h5><a class="footer-col-title" href="/volei">Vôlei</a></h5>
+      <%= link_to image_tag("volleyball.png", :alt => "volleyball", :size=> "64x64", :class => "img-link"),"/volei" %>
+    </div>
+    <div class="col-6 col-md">
+      <h5><a class="footer-col-title" href="/sobre">Sobre</a></h5>
+      <%= link_to image_tag("info.png", :alt => "info", :size=> "64x64", :class => "img-link"),"/sobre" %>
+    </div>
+  </div>
+</footer>
 <br>
 <footer class="container py-5">
       <div class="row">
