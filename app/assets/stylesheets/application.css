@@ -23,4 +23,11 @@
      margin-left: 50%;
  }
  
+ nav a:hover{
+    border-bottom: 3px solid black;
+ }
+ 
+ nav{
+  padding-bottom: 0 !important;
+ }
  
