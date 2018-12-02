@@ -36,8 +36,20 @@
  }
  
  .center{
-  text-align: center !important;
-  margin-left: 40%;
   width: 100px;
  }
  
+ .user{
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+ }
+ 
+  
+ .featurette-heading{
+  text-align: center;margin: 30px 0px;
+ }
+ 
+ .button_to{
+  text-align: center
+ }
