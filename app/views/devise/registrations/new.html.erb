@@ -35,7 +35,7 @@
       <%= link_to 'Sobre', main_sobre_path, :class => "nav-item nav-link"%>
       |
       <% if user_signed_in? %>
-         <a class="nav-item nav-link" disabled>Logado como: <strong><%= current_user.email %></strong>.</a>
+         <span class="nav-item nav-link" disabled>Logado como: <strong><%= current_user.email %></strong>.</span>
         <%= link_to 'Edite seu perfil', edit_user_registration_path, :class => 'nav-item nav-link'%> 
         <%= link_to "Sair", destroy_user_session_path, method: :delete, :class => 'nav-item nav-link'  %>
       <% else %>
@@ -44,6 +44,8 @@
       <% end %>
     </div>
 </nav>
+<h1 class="featurette-heading col-md-12 display-4" style="text-align: center;margin: 30px 0px;">Cadastro</h1>
+<hr class="featurette-divider">
 <div class="container containersize">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -67,7 +69,7 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Entrar", :class => "btn btn-dark center" %>
+    <%= f.submit "Confirmar", :class => "btn btn-dark center" %>
   </div>
 <% end %>
 
