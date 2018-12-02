@@ -44,7 +44,9 @@
     line-height: 1.2;
     text-align: center;
  }
- 
+ .featurette-divider-cadastro{
+  margin-top: 15%;
+ }
   
  .featurette-heading{
   text-align: center;margin: 30px 0px;
