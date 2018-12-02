@@ -44,42 +44,28 @@
       <% end %>
     </div>
 </nav>
-<div class="jumbotron">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" style="color: white;" href="#" role="button">Learn more</a>
-</div>
+<h1 class="featurette-heading col-md-12 display-4" style="text-align: center;margin: 30px 0px;">Notícias</h1>
+<hr class="featurette-divider">
 <div class="card-deck">
   <div class="card">
-    <img class="card-img-top" src="https://conteudo.imguol.com.br/c/parceiros/5e/2018/10/31/nadal-desiste-do-masters-de-paris-e-djokovic-garante-retorno-ao-numero-1-do-mundo-1541001278991_v2_300x225.jpg" alt="Card image cap">
+    <%= link_to image_tag("futebol.jpg", :alt => "Santos avança e oferece 2 anos de contrato a Abel, mas Fla segue na briga", :size => "408.33x200", :class => "img-card"),"/futebol" %>  
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+      <h5 class="card-title">Santos avança e oferece 2 anos de contrato a Abel, mas Fla segue na briga</h5>
+      <p class="card-text">Após duas reuniões com o estafe do técnico Abel Braga, o presidente do Santos, José Carlos Peres, voltou animado do Rio de Janeiro. Segundo apurou o UOL Esporte, o clube paulista avançou nas negociações e já discute tempo de contrato e multa rescisória.</p>
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="https://conteudo.imguol.com.br/c/parceiros/5e/2018/10/31/nadal-desiste-do-masters-de-paris-e-djokovic-garante-retorno-ao-numero-1-do-mundo-1541001278991_v2_300x225.jpg" alt="Card image cap">
+    <%= link_to image_tag("volei.jpg", :alt => "Poderosos, Zenit dá vexame e Sada vira coadjuvante no Mundial", :size=> "408.33x200", :class => "img-card"),"/volei" %>
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+      <h5 class="card-title">Poderosos, Zenit dá vexame e Sada vira coadjuvante no Mundial</h5>
+      <p class="card-text">Duas quedas monumentais e surpreendentes marcaram esta 14ª edição do Campeonato Mundial de Clubes de vôlei masculino, que está sendo realizado na Polônia: o brasileiro Sada Cruzeiro e o russo Zenit Kazan, gigantes da modalidade, caíram ainda na primeira fase, somando duas derrotas cada um. Sim, as mesmas equipes que há dois anos fizeram a final da competição, com o clube de Belo Horizonte se sagrando tricampeão. Nesta edição, no entanto, desclassificados precocemente, os dois times entraram em quadra nesta quinta-feira (29) apenas para cumprir tabela e tentar se despedir do torneio de maneira honrosa.</p>
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="https://conteudo.imguol.com.br/c/parceiros/5e/2018/10/31/nadal-desiste-do-masters-de-paris-e-djokovic-garante-retorno-ao-numero-1-do-mundo-1541001278991_v2_300x225.jpg" alt="Card image cap">
+    <%= link_to image_tag("luta.jpg", :alt => "Anderson Silva", :size => "408.33x200", :class => "img-card"),"/luta" %>
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+      <h5 class="card-title">Anderson Silva revela promessa de luta por cinturão do UFC em caso de vitória</h5>
+      <p class="card-text">Anderson Silva tem 43 anos e está há quase dois sem lutar. No entanto, sua história e seus feitos parecem colocá-lo a uma luta de disputar o cinturão dos pesos-médios (84 kg) novamente. De acordo com o 'Spider', o UFC prometeu um 'title shot' caso ele vença Israel Adesanya no UFC 234, no dia 9 de fevereiro de 2019, em Melbourne (AUS).</p>
     </div>
   </div>
 </div>
