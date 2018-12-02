@@ -31,3 +31,13 @@
   padding-bottom: 0 !important;
  }
  
+ .containersize{
+  max-width: 400px !important;
+ }
+ 
+ .center{
+  text-align: center !important;
+  margin-left: 40%;
+  width: 100px;
+ }
+ 
