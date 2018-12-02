@@ -46,6 +46,8 @@
  }
  .featurette-divider-cadastro{
   margin-top: 15%;
+  margin-bottom: 0;
+   position: relative;
  }
   
  .featurette-heading{
@@ -86,4 +88,9 @@
 
  .img-sobre{
   float: left;
+ }
+ 
+  .col-6.col-md{
+  margin-left: 8%;
+  display: inline;
  }
