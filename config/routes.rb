@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+  #ROTAS DOS RESULTADOS
   get    "/resultados"          => "resultados#index"   ,as: "resultados"
   post   "/resultados"          => "resultados#create"   ,as: ""
   get    "/resultados/:id/edit" => "resultados#edit"     ,as: "edit_resultados"
@@ -8,16 +9,15 @@ Rails.application.routes.draw do
   put    "/resultados/:id"      => "resultados#update"   ,as: ""
   delete "/resultados/:id"      => "resultados#destroy"  ,as: ""
   get '/resultados' => 'resultados#new', as: 'new_resultados'
-  resources :diarios
-  get 'premium' => 'main#premium', as: 'main_premium' 
-  get    "/inscritos"          => "inscritos#index"    ,as: "inscritos"
-  post   "/inscritos"          => "inscritos#create"   ,as: ""
-  get    "/inscritos/:id/edit" => "inscritos#edit"     ,as: "edit_inscrito"
-  get    "/inscritos/:id"      => "inscritos#show"     ,as: "inscrito"
-  patch  "/inscritos/:id"      => "inscritos#update"   ,as: ""
-  put    "/inscritos/:id"      => "inscritos#update"   ,as: ""
-  delete "/inscritos/:id"      => "inscritos#destroy"  ,as: ""
-  get '/cadastro' => 'inscritos#new', as: 'new_inscrito'
+  #ROTAS DOS DIARIOS
+  get    "/diarios"          => "diarios#index"    ,as: "diarios"
+  post   "/diarios"          => "diarios#create"   ,as: ""
+  get    "/diarios/:id/edit" => "diarios#edit"     ,as: "edit_diario"
+  get    "/diarios/:id"      => "diarios#show"     ,as: "diario"
+  patch  "/diarios/:id"      => "diarios#update"   ,as: ""
+  put    "/diarios/:id"      => "diarios#update"   ,as: ""
+  delete "/diarios/:id"      => "diarios#destroy"  ,as: ""
+  get '/diario/novo' => 'diarios#new', as: 'new_diario'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root "main#noticias"
   get 'sobre' => 'main#sobre', as: 'main_sobre'
