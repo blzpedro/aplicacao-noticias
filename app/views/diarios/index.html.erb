@@ -46,12 +46,12 @@
       <% end %>
     </div>
 </nav> 
-<table>
+<table class="table table-dark">
   <thead>
     <tr>
-      <th>Titulo</th>
-      <th>Corpo</th>
-      <th colspan="3"></th>
+      <th scope="row">Título</th>
+      <th scope="row">Corpo</th>
+      <th scope="row"></th>
     </tr>
   </thead>
 
@@ -60,7 +60,6 @@
       <tr>
         <td><%= diario.titulo %></td>
         <td><%= diario.corpo %></td>
-        <td><%= link_to 'Show', diario %></td>
         <td><%= link_to 'Edit', edit_diario_path(diario) %></td>
         <td><%= link_to 'Destroy', diario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -70,7 +69,6 @@
 
 <br>
 
-<%= link_to 'New Diario', new_diario_path %>
 <hr class="featurette-divider">
 <footer class="container py-5">
   <div class="row">
