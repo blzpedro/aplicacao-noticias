@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
   devise_for :users
   #ROTAS DOS RESULTADOS
-  get    "/resultados"          => "resultados#index"   ,as: "resultados"
+  get    "/resultados"          => "resultados#index"    ,as: "resultados"
   post   "/resultados"          => "resultados#create"   ,as: ""
-  get    "/resultados/:id/edit" => "resultados#edit"     ,as: "edit_resultados"
+  get    "/resultados/:id/edit" => "resultados#edit"     ,as: "edit_resultado"
   get    "/resultados/:id"      => "resultados#show"     ,as: "resultado"
   patch  "/resultados/:id"      => "resultados#update"   ,as: ""
   put    "/resultados/:id"      => "resultados#update"   ,as: ""
   delete "/resultados/:id"      => "resultados#destroy"  ,as: ""
-  get '/resultados' => 'resultados#new', as: 'new_resultados'
+  get '/resultado/novo' => 'resultados#new', as: 'new_resultado'
   #ROTAS DOS DIARIOS
   get    "/diarios"          => "diarios#index"    ,as: "diarios"
   post   "/diarios"          => "diarios#create"   ,as: ""
