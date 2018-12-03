@@ -45,28 +45,21 @@
         <%= link_to "Entrar", new_user_session_path, :class => 'nav-item nav-link'  %>
       <% end %>
     </div>
-</nav> 
-<table class="table table-dark">
-  <thead>
-    <tr>
-      <th scope="row">Título</th>
-      <th scope="row">Corpo</th>
-      <th scope="row"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @diarios.each do |diario| %>
-      <tr>
-        <td><%= diario.titulo %></td>
-        <td><%= diario.corpo %></td>
-        <td><%= link_to 'Edit', edit_diario_path(diario) %></td>
-        <td><%= link_to 'Destroy', diario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+</nav>
+<h1 class="featurette-heading col-md-12 display-4" style="text-align: center;margin: 30px 0px;">Noticias Publicadas</h1>
+<hr class="featurette-divider">
+<% @diarios.each do |diario| %>
+  <div class="card">
+    <div class="card-body featurette-heading">
+      <h5 class="col-md-12 display-4">Titulo</h5>
+      <h6 class="col-md-12 "><%= diario.titulo %></h6>
+      <h6 class="card-title display-4">Corpo</h6>
+      <p class="col-md-6" style="text-align: left;"><%= diario.corpo %></p>
+      <%= link_to 'Editar', edit_diario_path(diario) %></td>
+      <%= link_to 'Apagar', diario, method: :delete, data: { confirm: 'Você tem certeza?' } %>
+    </div>
+  </div>
+<% end %>  
 <br>
 
 <hr class="featurette-divider">
