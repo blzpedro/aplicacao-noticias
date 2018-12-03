@@ -94,3 +94,12 @@
   margin-left: 8%;
   display: inline;
  }
+ 
+ .card-deck{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+ }
+ 
+ nav a{
+  background-color: #f8f9fa !important;
+ }
