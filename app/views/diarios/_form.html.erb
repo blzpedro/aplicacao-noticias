@@ -14,7 +14,7 @@
       <div class="form-group col-md-6">
   <div class="field">
     <%= form.label :titulo %>
-    <%= form.text_field :titulo , :class => "form-control" %>
+    <%= form.text_field :titulo , :class => "form-control", :required => true %>
   </div>
   </div>
   </div>
@@ -22,7 +22,7 @@
       <div class="form-group col-md-6">
   <div class="field">
     <%= form.label :corpo %>
-    <%= form.text_area :corpo , :class => "form-control"%>
+    <%= form.text_area :corpo, :class => "form-control", :rows => 8, :required => true %>
   </div>
 </div>
 </div>
