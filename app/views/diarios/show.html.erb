@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @diario.titulo %>
+</p>
+
+<p>
+  <strong>Corpo:</strong>
+  <%= @diario.corpo %>
+</p>
+
+<%= link_to 'Edit', edit_diario_path(@diario) %> |
+<%= link_to 'Back', diarios_path %>

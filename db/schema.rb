@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_01_130500) do
+ActiveRecord::Schema.define(version: 2018_12_03_121506) do
+
+  create_table "diarios", force: :cascade do |t|
+    t.string "titulo"
+    t.string "corpo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "inscritos", force: :cascade do |t|
     t.string "email"
