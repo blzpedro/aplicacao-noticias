@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   patch  "/resultados/:id"      => "resultados#update"   ,as: ""
   put    "/resultados/:id"      => "resultados#update"   ,as: ""
   delete "/resultados/:id"      => "resultados#destroy"  ,as: ""
-  get '/resultado/novo' => 'resultados#new', as: 'new_resultado'
+  get '/resultado/segredo' => 'resultados#new', as: 'new_resultado'
   #ROTAS DOS DIARIOS
   get    "/diarios"          => "diarios#index"    ,as: "diarios"
   post   "/diarios"          => "diarios#create"   ,as: ""
