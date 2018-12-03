@@ -1,7 +1,53 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Diarios</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <span class="navbar-brand">
+    <%= image_tag("logo.png", :alt => "logo", size: "30x30", :class => "navbar-brand") %>
+    Portal do Esporte
+  </span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse navbar-nav" id="navbarNavAltMarkup">
+      <a class="nav-item nav-link active" href="#">Home</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sessões
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to 'Futebol', sessions_futebol_path, :class => "dropdown-item nav-item nav-link"%>
+          <%= link_to 'Luta', sessions_luta_path, :class => "dropdown-item nav-item nav-link"%>
+          <%= link_to 'Volei', sessions_volei_path, :class => "dropdown-item nav-item nav-link"%>
+        </div>
+      </li>
+      
+      <% if user_signed_in? %>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sessões Premium
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to 'Basquete', sessionspremium_basquete_path, :class => "dropdown-item nav-item nav-link"%>
+          <%= link_to 'Tenis', sessionspremium_tenis_path, :class => "dropdown-item nav-item nav-link"%>
+          <%= link_to 'Ultimos Resultados', "/resultados", :class => "dropdown-item nav-item nav-link"%>
+        </div>
+      </li>      
+      <%= link_to "Publique sua noticia", new_diario_path, :class => "nav-item nav-link" %>
+      <%= link_to "Noticias publicadas", "/diarios", :class => "nav-item nav-link" %>
+      <% end %>
 
+      <%= link_to 'Sobre', main_sobre_path, :class => "nav-item nav-link"%>
+      |
+      <% if user_signed_in? %>
+         <span class="nav-item nav-link" disabled>Logado como: <strong><%= current_user.email %></strong>.</span>
+        <%= link_to 'Edite seu perfil', edit_user_registration_path, :class => 'nav-item nav-link'%> 
+        <%= link_to "Sair", destroy_user_session_path, method: :delete, :class => 'nav-item nav-link'  %>
+      <% else %>
+        <%= link_to "Cadastre-se", new_user_registration_path, :class => 'nav-item nav-link'  %> 
+        <%= link_to "Entrar", new_user_session_path, :class => 'nav-item nav-link'  %>
+      <% end %>
+    </div>
+</nav> 
 <table>
   <thead>
     <tr>
@@ -27,3 +73,24 @@
 <br>
 
 <%= link_to 'New Diario', new_diario_path %>
+<hr class="featurette-divider">
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-6 col-md">
+      <h5><a class="footer-col-title" href="/futebol">Futebol</a></h5>
+      <%= link_to image_tag("football.png", :alt => "football", :size=> "64x64", :class => "img-link"),"/futebol" %>
+    </div>
+    <div class="col-6 col-md">
+      <h5><a class="footer-col-title" href="/luta">Luta</a></h5>
+      <%= link_to image_tag("boxing-glove.png", :alt => "boxing-glove", :size=> "64x64", :class => "img-link"),"/luta" %>
+    </div>
+    <div class="col-6 col-md">
+      <h5><a class="footer-col-title" href="/volei">Vôlei</a></h5>
+      <%= link_to image_tag("volleyball.png", :alt => "volleyball", :size=> "64x64", :class => "img-link"),"/volei" %>
+    </div>
+    <div class="col-6 col-md">
+      <h5><a class="footer-col-title" href="/sobre">Sobre</a></h5>
+      <%= link_to image_tag("info.png", :alt => "info", :size=> "64x64", :class => "img-link"),"/sobre" %>
+    </div>
+  </div>
+</footer>
