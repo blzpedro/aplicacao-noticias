@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :resultados
   resources :diarios
   devise_for :users
   get 'premium' => 'main#premium', as: 'main_premium' 

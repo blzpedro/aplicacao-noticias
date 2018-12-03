@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time1: MyString
+  gols1: 1
+  time2: MyString
+  gols2: 1
+
+two:
+  time1: MyString
+  gols1: 1
+  time2: MyString
+  gols2: 1
