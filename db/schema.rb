@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_03_121506) do
+ActiveRecord::Schema.define(version: 2018_12_03_122129) do
 
   create_table "diarios", force: :cascade do |t|
     t.string "titulo"
@@ -21,6 +21,15 @@ ActiveRecord::Schema.define(version: 2018_12_03_121506) do
 
   create_table "inscritos", force: :cascade do |t|
     t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "resultados", force: :cascade do |t|
+    t.string "time1"
+    t.integer "gols1"
+    t.string "time2"
+    t.integer "gols2"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
