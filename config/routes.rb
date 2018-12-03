@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :resultados
+  get    "/resultados"          => "resultados#index"   ,as: "resultados"
+  post   "/resultados"          => "resultados#create"   ,as: ""
+  get    "/resultados/:id/edit" => "resultados#edit"     ,as: "edit_resultados"
+  get    "/resultados/:id"      => "resultados#show"     ,as: "resultado"
+  patch  "/resultados/:id"      => "resultados#update"   ,as: ""
+  put    "/resultados/:id"      => "resultados#update"   ,as: ""
+  delete "/resultados/:id"      => "resultados#destroy"  ,as: ""
+  get '/resultados' => 'resultados#new', as: 'new_resultados'
   resources :diarios
   get 'premium' => 'main#premium', as: 'main_premium' 
   get    "/inscritos"          => "inscritos#index"    ,as: "inscritos"
