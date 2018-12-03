@@ -1,5 +1,6 @@
 class DiariosController < ApplicationController
   before_action :set_diario, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /diarios
   # GET /diarios.json
