@@ -7,7 +7,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse navbar-nav" id="navbarNavAltMarkup">
-      <a class="nav-item nav-link active" href="/">Home</a>
+      <a class="nav-item nav-link" href="/">Home</a>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Sessões
@@ -30,7 +30,7 @@
           <%= link_to 'Ultimos Resultados', resultados_path, :class => "dropdown-item nav-item nav-link"%>
         </div>
       </li>      
-      <%= link_to "Publique sua noticia", new_diario_path, :class => "nav-item nav-link" %>
+      <%= link_to "Publique sua noticia", new_diario_path, :class => "nav-item nav-link active" %>
       <%= link_to "Noticias publicadas", "/diarios", :class => "nav-item nav-link" %>
       <% end %>
 
@@ -46,10 +46,10 @@
       <% end %>
     </div>
 </nav> 
-
+<h1 class="featurette-heading col-md-12 display-4" style="text-align: center;margin: 30px 0px;">Nova Publicação</h1>
+<hr class="featurette-divider">
 <%= render 'form', diario: @diario %>
 
-<%= link_to 'Back', diarios_path %>
 <hr class="featurette-divider">
 <footer class="container py-5">
   <div class="row">

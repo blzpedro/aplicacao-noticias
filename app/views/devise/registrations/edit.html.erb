@@ -38,7 +38,7 @@
       |
       <% if user_signed_in? %>
          <span class="nav-item nav-link" disabled>Logado como: <strong><%= current_user.email %></strong>.</span>
-        <%= link_to 'Edite seu perfil', edit_user_registration_path, :class => 'nav-item nav-link'%> 
+        <%= link_to 'Edite seu perfil', edit_user_registration_path, :class => 'nav-item nav-link active'%> 
         <%= link_to "Sair", destroy_user_session_path, method: :delete, :class => 'nav-item nav-link'  %>
       <% else %>
         <%= link_to "Cadastre-se", new_user_registration_path, :class => 'nav-item nav-link'  %> 

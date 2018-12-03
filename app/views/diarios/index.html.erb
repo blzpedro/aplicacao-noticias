@@ -7,7 +7,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse navbar-nav" id="navbarNavAltMarkup">
-      <a class="nav-item nav-link active" href="/">Home</a>
+      <a class="nav-item nav-link" href="/">Home</a>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Sessões
@@ -31,7 +31,7 @@
         </div>
       </li>      
       <%= link_to "Publique sua noticia", new_diario_path, :class => "nav-item nav-link" %>
-      <%= link_to "Noticias publicadas", "/diarios", :class => "nav-item nav-link" %>
+      <%= link_to "Noticias publicadas", "/diarios", :class => "nav-item nav-link active" %>
       <% end %>
 
       <%= link_to 'Sobre', main_sobre_path, :class => "nav-item nav-link"%>

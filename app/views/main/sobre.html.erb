@@ -34,7 +34,7 @@
       <%= link_to "Noticias publicadas", "/diarios", :class => "nav-item nav-link" %>
       <% end %>
 
-      <%= link_to 'Sobre', main_sobre_path, :class => "nav-item nav-link"%>
+      <%= link_to 'Sobre', main_sobre_path, :class => "nav-item nav-link active"%>
       |
       <% if user_signed_in? %>
          <span class="nav-item nav-link" disabled>Logado como: <strong><%= current_user.email %></strong>.</span>
