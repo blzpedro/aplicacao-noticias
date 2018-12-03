@@ -18,7 +18,7 @@ class DiariosTest < ApplicationSystemTestCase
     fill_in "Titulo", with: @diario.titulo
     click_on "Create Diario"
 
-    assert_text "Diario was successfully created"
+    assert_text "Nova publicação criada."
     click_on "Back"
   end
 
@@ -30,7 +30,7 @@ class DiariosTest < ApplicationSystemTestCase
     fill_in "Titulo", with: @diario.titulo
     click_on "Update Diario"
 
-    assert_text "Diario was successfully updated"
+    assert_text "Noticia atualizada!"
     click_on "Back"
   end
 
@@ -40,6 +40,6 @@ class DiariosTest < ApplicationSystemTestCase
       click_on "Destroy", match: :first
     end
 
-    assert_text "Diario was successfully destroyed"
+    assert_text "Noticia deletada!"
   end
 end

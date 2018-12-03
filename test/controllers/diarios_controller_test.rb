@@ -26,6 +26,7 @@ class DiariosControllerTest < ActionDispatch::IntegrationTest
   test "should show diario" do
     get diario_url(@diario)
     assert_response :success
+    validates_length_of :titulo, :minimum => 9
   end
 
   test "should get edit" do

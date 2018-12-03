@@ -1,2 +1,0 @@
-class Inscrito < ApplicationRecord
-end
